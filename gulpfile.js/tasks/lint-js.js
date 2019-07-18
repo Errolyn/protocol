@@ -8,7 +8,7 @@ function lintJS() {
     return gulp.src(config.src)
         .pipe(eslint())
         .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
+        // .pipe(eslint.failAfterError());
 }
 
 module.exports = lintJS;

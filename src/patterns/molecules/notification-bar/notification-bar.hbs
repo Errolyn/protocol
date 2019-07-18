@@ -1,0 +1,36 @@
+---
+name: Notification bar
+description: A notification bar provides contextual feedback messages
+notes: |
+    - Notification bars have a range of different colors.
+      - `mzp-t-success`
+      - `mzp-t-warning`
+      - `mzp-t-error`
+      - `mzp-t-click`
+    - A dismiss button is also optional.
+      - `has-dismiss`
+order: 5
+---
+
+
+<h1 class="mzp-c-notification-bar mzp-t-success has-dismiss">
+  <span class="mzp-c-notification-bar-content">Great! You clicked the thing!</span>
+  <button class="mzp-c-notification-bar-button" type="button"></button>
+</h1>
+
+<div class="mzp-c-notification-bar mzp-t-warning has-dismiss">
+  <span class="mzp-c-notification-bar-content">Warning, you're about to do something bad!</span>
+  <button class="mzp-c-notification-bar-button" type="button"></button>
+</div>
+
+<div class="mzp-c-notification-bar mzp-t-error has-dismiss">
+  <span class="mzp-c-notification-bar-content">Whoops. You deleted something.</span>
+  <button class="mzp-c-notification-bar-button" type="button"></button>
+</div>
+
+<div class="mzp-c-notification-bar mzp-t-click has-dismiss">
+  <span class="mzp-c-notification-bar-content">Click this thing.</span>
+  <button class="mzp-c-notification-bar-button" type="button"></button>
+</div>
+
+<script src="{{@root.baseurl}}/assets/protocol/protocol/js/protocol-notification-bar.js"></script>
